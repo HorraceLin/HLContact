@@ -28,8 +28,15 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     
     HLContactEngine * engine = [[HLContactEngine alloc] init];
-    [self.datas setArray:[engine loadPerson]];
-    [self.mainTB reloadData];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self.datas setArray:[engine loadPerson]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.mainTB reloadData];
+        });
+    });
+    
+    
+    
     // Do any additional setup after loading the view.
 }
 

@@ -1,0 +1,16 @@
+//
+//  HLContact.pch
+//  HLContact
+//
+//  Created by Horrace Lin on 16/3/26.
+//  Copyright © 2016年 Horrace Lin. All rights reserved.
+//
+
+#ifndef HLContact_pch
+#define HLContact_pch
+
+#define  __CURRENT__DEVICE__VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* HLContact_pch */

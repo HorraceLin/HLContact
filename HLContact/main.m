@@ -2,8 +2,8 @@
 //  main.m
 //  HLContact
 //
-//  Created by administrater on 16/3/25.
-//  Copyright © 2016年 administrater. All rights reserved.
+//  Created by Horrace Lin on 16/3/25.
+//  Copyright © 2016年 Horrace Lin. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
